@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 import { DashboardComponent } from './dashboard.component';
 
 describe('DashboardComponent', () => {
@@ -8,8 +7,7 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+      declarations: [ DashboardComponent ]
     })
     .compileComponents();
 
@@ -18,9 +16,6 @@ describe('DashboardComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
 function beforeEach(arg0: () => Promise<void>) {
   throw new Error('Function not implemented.');

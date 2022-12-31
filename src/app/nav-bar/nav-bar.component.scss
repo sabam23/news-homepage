@@ -15,7 +15,7 @@
     }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 655px){
     .nav-bar {
         width: 92%;
         justify-content: space-between;
@@ -73,7 +73,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 655px) {
     .menu-icon {
         display: none;
     }
@@ -82,7 +82,6 @@
     }
 
     .nav-bar {
-        width: 75%;
         max-width: 1200px;
         justify-content: space-between;
 
