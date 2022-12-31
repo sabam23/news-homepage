@@ -1,7 +1,7 @@
 .news {
     display: flex;
     flex-direction: column;
-    min-height: 490px;
+    height: 470px;
     background-color: #00001a;
     font-family: 'Inter', sans-serif;
     padding-top: 30px;
@@ -24,7 +24,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        cursor: pointer;
 
          &:not(#first) {
             border-top: 2px solid #9091a5;
@@ -42,50 +41,23 @@
             color: #9091a5;
             line-height: 27px;
         }
-
-        &:hover .news-tab-title {
-            color: #eab467;
-        }
     }
 }
 
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 600px) {
     :host {
         padding: 20px;
-        width: 92%;
     }
-}
-
-@media only screen and (min-width: 1200px) {
     .news {
-        width: 100%;
-        height: 490px;
-   }
-   :host {
-     width: 29.5%;
+        width: 400px;
    }
 }
 
-@media only screen and (min-width: 655px) and (max-width:1200px) {
+@media only screen and (min-width: 600px) {
     .news {
         width: 100%;
-        height: auto;
-
-        &-tab {
-            text-align: center;
-            width: 95%;
-            &-titele {
-                font-size: 20px;
-            }
-
-            &-content {
-                font-size: 16px;
-            }
-        }
-
-        
    }
    :host {
-     width: 27%;
+    width: 29.5%;
    }
 }
