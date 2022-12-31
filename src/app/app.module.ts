@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MainNewsPageComponent } from './main-news-page/main-news-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     MainNewsPageComponent,
-    DashboardComponent
+    DashboardComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
