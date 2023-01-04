@@ -6,7 +6,7 @@
    width: 100%;
 }
 
-@media only screen and (max-width: 655px)    {
+@media only screen and (max-width: 755px)    {
     :host {
         flex-direction: column;
         justify-content: center;
@@ -20,7 +20,7 @@
     }
 }
 
-@media only screen and (min-width: 655px) and (max-width:1200px) {
+@media only screen and (min-width: 755px) and (max-width:1200px) {
     :host {
         flex-direction: row;
         column-gap: 20px;

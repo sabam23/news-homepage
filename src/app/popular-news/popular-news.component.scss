@@ -1,0 +1,139 @@
+.popular-news {
+    display: flex;
+    max-width: 1200px;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 60px;
+
+    &-tab {
+        display: flex;
+        column-gap: 30px;
+        cursor: pointer;
+
+        &:hover &-content > h2{
+            color: #d96a5f;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            & > h1 {
+                font-size: 38px;
+                font-weight: 800;
+                color: #dcdbe0;
+            }
+
+            & > h2 {
+                font-size: 24px;
+                font-weight: 700;
+                color: #00001a;
+            }
+
+            & > .content {
+                font-size: 18px;
+                color: #79787f;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 455px) and (max-width: 755px) {
+    :host {
+        width: 92%;
+    }
+
+    .popular-news {
+        flex-direction: column;
+        row-gap: 25px;
+
+        &-tab {
+            height: 180px;
+
+            > img {
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :host {
+        width: 100%;
+    }
+
+    .popular-news {
+        flex-direction: row;
+        column-gap: 30px; 
+
+        &-tab {
+            height: 150px;
+
+            & > img {
+                height: 150px;
+            }
+
+
+            &-content {
+                & > h2 {
+                    font-size: 20px;
+                }
+
+                & > .content {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 755px) and (max-width: 1200px) {
+    :host {
+        width: 93%;
+    }
+
+    .popular-news {
+        flex-direction: row;
+        column-gap: 20px; 
+
+        &-tab {
+            height: 130px;
+
+            & > img {
+                height: 130px;
+            }
+
+
+            &-content {
+                & > h2 {
+                    font-size: 19px;
+                }
+
+                & > .content {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    :host {
+        width: 92%;
+    }
+
+    .popular-news {
+        flex-direction: column;
+        row-gap: 30px;
+
+        &-tab {
+            height: auto;
+
+            > img {
+                height: auto;
+            }
+        }
+    }
+}

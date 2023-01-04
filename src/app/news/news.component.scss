@@ -5,6 +5,7 @@
   background-color: #00001a;
   font-family: "Inter", sans-serif;
   padding-top: 30px;
+  margin-bottom: 60px;
 
   &-title {
     color: #e2ad59;
@@ -49,7 +50,7 @@
   }
 }
 
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 755px) {
   :host {
     padding: 20px;
     width: 92%;
@@ -67,7 +68,7 @@
   }
 }
 
-@media only screen and (min-width: 655px) and (max-width: 1200px) {
+@media only screen and (min-width: 755px) and (max-width: 1200px) {
   .news {
     width: 100%;
     height: auto;
