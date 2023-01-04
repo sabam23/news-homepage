@@ -129,10 +129,23 @@
         row-gap: 30px;
 
         &-tab {
-            height: auto;
+            height: 130px;
 
             > img {
-                height: auto;
+                height: 130px;
+            }
+
+            &-content {
+                row-gap: 5px;
+
+                & > h2 {
+                    font-size: 18px;
+                }
+
+                & > .content {
+                    font-size: 15px;
+                    line-height: 15px;
+                }
             }
         }
     }
